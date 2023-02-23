@@ -28,7 +28,8 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public List<Category> List()
         {
-           return _object.ToList(); //EntityFramework de verileri listelemek için kullanılan metot dur 
+            var list = _object.ToList(); //EntityFramework de verileri listelemek için kullanılan metot dur 
+            return list;
         }
 
         public void Update(Category p)
