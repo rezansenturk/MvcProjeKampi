@@ -1,0 +1,45 @@
+﻿using DataAccessLeyer.Abstract;
+using EntityLayer.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Runtime.Remoting.Contexts;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLeyer.Concrete.Repositories
+{
+    public class WriterRepository : IWriterDal
+    {
+
+
+        Context c = new Context();
+        DbSet<Writer> _object;
+        public void Delete(Writer p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Insert(Writer p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Writer> list()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Writer> list(Expression<Func<Writer, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Writer p)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
