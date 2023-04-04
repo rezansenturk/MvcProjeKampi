@@ -75,15 +75,55 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="Concrete\Repositories\WriterRepository.cs" />
+    <Compile Include="EntitiyFramework\EfAboutDal.cs" />
+    <Compile Include="EntitiyFramework\EFCategoryDal.cs" />
+    <Compile Include="EntitiyFramework\EfContactDal.cs" />
+    <Compile Include="EntitiyFramework\EfContentDal.cs" />
+    <Compile Include="EntitiyFramework\EfHeadingDal.cs" />
+    <Compile Include="EntitiyFramework\EfMessageDal.cs" />
+    <Compile Include="EntitiyFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202302231217054_mig1.cs" />
     <Compile Include="Migrations\202302231217054_mig1.designer.cs">
       <DependentUpon>202302231217054_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303291006259_mig_writer_edit.cs" />
+    <Compile Include="Migrations\202303291006259_mig_writer_edit.designer.cs">
+      <DependentUpon>202303291006259_mig_writer_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303291348364_mig_writertitle_add.cs" />
+    <Compile Include="Migrations\202303291348364_mig_writertitle_add.designer.cs">
+      <DependentUpon>202303291348364_mig_writertitle_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303292237076_mig_imagesizechange.cs" />
+    <Compile Include="Migrations\202303292237076_mig_imagesizechange.designer.cs">
+      <DependentUpon>202303292237076_mig_imagesizechange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303292350326_mig_writer_addstatus.cs" />
+    <Compile Include="Migrations\202303292350326_mig_writer_addstatus.designer.cs">
+      <DependentUpon>202303292350326_mig_writer_addstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303301339320_mig_contentstatusadd.cs" />
+    <Compile Include="Migrations\202303301339320_mig_contentstatusadd.designer.cs">
+      <DependentUpon>202303301339320_mig_contentstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303301343548_mig_headingstatusadd.cs" />
+    <Compile Include="Migrations\202303301343548_mig_headingstatusadd.designer.cs">
+      <DependentUpon>202303301343548_mig_headingstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303312042438_mig_add_message.cs" />
+    <Compile Include="Migrations\202303312042438_mig_add_message.designer.cs">
+      <DependentUpon>202303312042438_mig_add_message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304032127336_contact_adddate.cs" />
+    <Compile Include="Migrations\202304032127336_contact_adddate.designer.cs">
+      <DependentUpon>202304032127336_contact_adddate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,6 +141,30 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202302231217054_mig1.resx">
       <DependentUpon>202302231217054_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303291006259_mig_writer_edit.resx">
+      <DependentUpon>202303291006259_mig_writer_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303291348364_mig_writertitle_add.resx">
+      <DependentUpon>202303291348364_mig_writertitle_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303292237076_mig_imagesizechange.resx">
+      <DependentUpon>202303292237076_mig_imagesizechange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303292350326_mig_writer_addstatus.resx">
+      <DependentUpon>202303292350326_mig_writer_addstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303301339320_mig_contentstatusadd.resx">
+      <DependentUpon>202303301339320_mig_contentstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303301343548_mig_headingstatusadd.resx">
+      <DependentUpon>202303301343548_mig_headingstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303312042438_mig_add_message.resx">
+      <DependentUpon>202303312042438_mig_add_message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304032127336_contact_adddate.resx">
+      <DependentUpon>202304032127336_contact_adddate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
